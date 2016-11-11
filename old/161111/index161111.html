@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="システム開発,システム,開発">
+<meta name="description" content="EBAシステム開発">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EBAシステム開発</title>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sp.css">
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/old_ie.css">
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script>
+ $(function(){
+        TweenMax.from('#contents01_2', 1.5, {right:'100%'});
+        });
+</script>
+<script>
+$(function() {
+    var showFlag = false;
+    var topBtn = $('#pagetop');
+    topBtn.css('bottom', '-100px');
+    var showFlag = false;
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            if (showFlag == false) {
+                showFlag = true;
+                topBtn.stop().animate({'bottom' : '20px'}, 200);
+            }
+        } else {
+            if (showFlag) {
+                showFlag = false;
+                topBtn.stop().animate({'bottom' : '-100px'}, 200);
+            }
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+	<div id="wrapper">
+    	<header>
+        	<h1><img src="img/logo.png" alt="EBA株式会社"></h1>
+            <p>
+                <img src="img/tell.png" alt="電話番号">
+                <a href="http://ebacorp.jp/EBAtoiawase.php"><img src="img/mail.png" alt="お問い合わせ"></a>
+            </p>
+        </header>
+        <div id="main">
+            <div id="title"><img src="img/title.png" alt="EBAのシステム開発"></div>
+            <div id="contents01">
+                <div id="contents01_1">
+                    <marquee behavior="alternate"><img src="img/contents01_1.png" alt="提案"></marquee>
+                </div>
+                 <div id="contents01_2">
+                    <img src="img/contents01_2.png" alt="内容">
+                </div>
+            </div>
+             <div id="contents02">
+                <div id="contents02_1">
+                    <marquee behavior="alternate"><img src="img/contents02_1.png" alt="安心"></marquee>
+                </div>
+                 <div id="contents02_2">
+                    <img src="img/contents02_2.png" alt="内容">
+                </div>
+            </div>
+            <div id="contents03">
+                <p>システム開発についてよくわからない場合でも、担当者が丁寧なヒヤリングをし、
+                    マッチしたプランをご提案致しますので、まずはお気軽にお問い合わせ下さい。</p>
+            </div>
+            <div id="contents04">
+                <p><strong>開発言語/開発OS</strong><br>
+                    UNIX,Linux,Fedora,SQLSever,MySQL,Oracle,PHP,JAVA,<br>
+                    JavaScript,C,C++,VB,XHTML+CSS,Ajax,RSS ...他各種言語に対応
+                    </p>
+            </div>
+            <div id="title2"><img src="img/title2.png" alt="見積算出方法"></div>
+            <div id="contents05">
+                <p>基本的な考え方は人件費です。
+                    EBAでは開発に必要な作業を日数換算で計算致します。
+                    作業が１ヶ月に満たない場合は週割り、日割りで換算致します。<br><br>
+                    優秀なエンジニアであるほど割高ですが、作業効率が良く、あらゆる場面で
+                    短期化が可能ですので、最終的に予算を抑えることが可能です。
+                </p>
+            </div>
+            <div id="title3"><img src="img/title3.png" alt="主な作業項目"></div>
+            <ul id="contents06">
+                <li class="button">業務分析/作業分析</li>
+                <li class="button">企画（構想）</li>
+                <li class="button">仕様作成</li>
+                <li class="button">概要設計</li>
+                <li class="button">詳細設計（プログラミング）</li>
+                <li class="button">テスト</li>
+                <li class="button">導入設置/導入補助</li>
+                <li class="button">トレーニング</li>
+            </ul>
+            <div id="contents07">
+                <p><strong>一番多いご依頼は、すべて一貫してお引き受けするものです。</strong><br>
+                    ※小規模で仕様が明確な場合は業務分析や導入設置などを省略する場合もあります。</p>
+            </div>
+            <div id="title4">日本全国どこからでも承ります!!</div>
+            <div id="contents08"><img src="img/map.png" alt="日本地図"></div>
+            <div id="contents09">
+            <p><strong>システム開発は47都道府県の各地域に対応。</strong><br>
+                    EBAでは、北海道から沖縄まで日本全国からのシステム開発を承ります。</p>
+            </div>
+            <p id="pagetop"><a href="#wrapper"><img src="img/pagetop.png" alt="ページトップボタン"></a></p>
+            <footer>
+                <small>Copyrights©2016 EBA,Inc. All Rights Reserved.</small>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
