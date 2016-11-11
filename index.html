@@ -122,28 +122,28 @@ $(function() {
             </div>
 			<div id="formWrap">
 			  <h3>お問い合わせフォーム</h3>
-			  <p>※必須項目</p>
+			  <p><span class="required">※</span>必須項目</p>
 			  <form method="post" action="mail.php">
 			    <table class="formTable">
 			      <tr>
-			        <th>お名前</th>
+			        <th>お名前&nbsp;<span class="required">※</span></th>
 			        <td><input size="20" type="text" name="お名前"></td>
 			      </tr>
 			      <tr>
-			        <th>フリガナ</th>
+			        <th>フリガナ&nbsp;<span class="required">※</span></th>
 			        <td><input size="20" type="text" name="フリガナ"></td>
 			      </tr>
 			      <tr>
-			        <th>会社名</th>
+			        <th>会社名&nbsp;<span class="required">※</span></th>
 			        <td><input size="20" type="text" name="会社名"></td>
 			      </tr>
 			      <tr>
-			        <th>性別</th>
+			        <th>性別&nbsp;<span class="required">※</span></th>
 			        <td><input type="radio" name="性別" value="男"> 男　
 			        <input type="radio" name="性別" value="女"> 女 </td>
 			      </tr>
 			      <tr>
-			        <th>住所（都道府県）</th>
+			        <th>住所（都道府県）&nbsp;<span class="required">※</span></th>
 			        <td><select name="住所（都道府県）">
 			          <option value="">都道府県の選択</option>
 			          <option value="北海道">北海道</option>
@@ -196,15 +196,15 @@ $(function() {
 			        </select></td>
 			      </tr>
 			      <tr>
-			        <th>住所（都道府県以下）</th>
+			        <th>住所（都道府県以下）&nbsp;<span class="required">※</span></th>
 			        <td><input size="30" type="text" name="住所（都道府県以下）"></td>
 			      </tr>
 			      <tr>
-			        <th>メールアドレス</th>
+			        <th>メールアドレス&nbsp;<span class="required">※</span></th>
 			        <td><input size="30" type="text" name="メールアドレス"></td>
 			      </tr>
 			      <tr>
-			        <th>電話番号</th>
+			        <th>電話番号&nbsp;<span class="required">※</span></th>
 			        <td><input size="30" type="text" name="電話番号"></td>
 			      </tr>
 			      <tr>
@@ -212,21 +212,23 @@ $(function() {
 			        <td><input size="30" type="text" name="サイトURL"></td>
 			      </tr>
 			      <tr>
-			        <th>お問い合わせサービス</th>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="ホームページ制作"> ホームページ制作</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="ランディングページ制作"> ランディングページ制作</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="パンフレット・フライヤー制作"> パンフレット・フライヤー制作</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="バナー制作"> バナー制作</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="ECサイト制作"> ECサイト制作</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="バナー・テキスト・パンフレット・記事広告"> バナー・テキスト・パンフレット・記事広告</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="ブログ広告"> ブログ広告</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="各種SNSページ制作・運営"> 各種SNSページ制作・運営</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="営業代行"> 営業代行</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="広告代理事業"> 広告代理事業</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="SEO対策"> SEO対策</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="代理店募集"> 代理店募集</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="SES"> SES</td>
-			        <td><input name="お問い合わせサービス[]" type="checkbox" value="その他"> その他</td>
+			        <th>お問い合わせサービス&nbsp;<span class="required">※</span></th>
+			        <td>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="ホームページ制作"> ホームページ制作<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="ランディングページ制作"> ランディングページ制作<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="パンフレット・フライヤー制作"> パンフレット・フライヤー制作<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="バナー制作"> バナー制作<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="ECサイト制作"> ECサイト制作<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="バナー・テキスト・パンフレット・記事広告"> バナー・テキスト・パンフレット・記事広告<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="ブログ広告"> ブログ広告<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="各種SNSページ制作・運営"> 各種SNSページ制作・運営<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="営業代行"> 営業代行<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="広告代理事業"> 広告代理事業<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="SEO対策"> SEO対策<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="代理店募集"> 代理店募集<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="SES"> SES<br>
+				        <input name="お問い合わせサービス[]" type="checkbox" value="その他"> その他
+			        </td>
 			      </tr>
 			      <tr>
 			        <th>ご予算</th>
