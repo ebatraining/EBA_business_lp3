@@ -323,4 +323,95 @@ small{
 	clear: both;
 }
 
+#formWrap {
+	width:100%;
+	margin:0 auto;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+}
+table.formTable{
+	margin:0 auto;
+	border-collapse:collapse;
+}
+table.formTable th{
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align:left;
+}
+table.formTable td{
+	font-weight:normal;
+	
+}
+h2 {
+    background-color: rgba(0,20,120,1.0);
+    color: #ffffff;
+    padding: 3%;
+    margin-top: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.3em;
+}
+p.hissu {
+  text-align: right;
+  margin: 0;
+  font-size: 0.7em;
+}
+.required {
+  color:red;
+}
+input.hoge,textarea.hoge {
+  border:0;
+  padding:10px;
+  font-size:0.9em;
+  border:solid 1px #ccc;
+  background-color: rgba(0,10,120,0.3);
+  margin:0 0 20px;
+  width:92%;
+  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+
+}
+select.hoge {
+  border:0;
+  padding:10px;
+  font-size:0.9em;
+  border:solid 1px #808080;
+  background-color: rgba(0,10,120,0.3);
+  margin:0 0 20px;
+  width: 98%;
+}
+input.submit {
+  border:solid 1px #000a78;
+  padding:10px 15px;
+  margin:0 0 20px;
+  font-family:Arial, sans-serif;
+  font-size:0.9em;
+  text-transform:uppercase;
+  font-weight:bold;
+  background-color: #000a78;
+  color: #ffffff;
+  cursor:pointer;
+}
+input.reset {
+  border:solid 1px #808080;
+  padding:10px 15px;
+  margin:0 0 20px;
+  font-family:Arial, sans-serif;
+  font-size:0.9em;
+  text-transform:uppercase;
+  font-weight:bold;
+  background-color: rgba(192,192,192,0.7);
+  color: #808080;
+  cursor:pointer;
+}
+td.hoge2 {
+  border:0;
+  padding:10px;
+  font-size:0.9em;
+  width: 92%;
+}
+
 }
