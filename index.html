@@ -120,31 +120,41 @@ $(function() {
             <p><strong>システム開発は47都道府県の各地域に対応。</strong><br>
                     EBAでは、北海道から沖縄まで日本全国からのシステム開発を承ります。</p>
             </div>
-			<div id="formWrap">
-			  <h3>お問い合わせフォーム</h3>
-			  <p><span class="required">※</span>必須項目</p>
+			<div id="formWrap" class="clear">
+			  <h2>お問い合わせフォーム</h2>
+			  <p class="hissu"><span class="required">※</span>必須項目</p>
 			  <form method="post" action="mail.php">
 			    <table class="formTable">
 			      <tr>
 			        <th>お名前&nbsp;<span class="required">※</span></th>
-			        <td><input size="20" type="text" name="お名前"></td>
+			      </tr>
+			      <tr>
+			        <td><input class="hoge" type="text" name="お名前"></td>
 			      </tr>
 			      <tr>
 			        <th>フリガナ&nbsp;<span class="required">※</span></th>
-			        <td><input size="20" type="text" name="フリガナ"></td>
+			      </tr>
+			      <tr>
+			        <td><input class="hoge" type="text" name="フリガナ"></td>
 			      </tr>
 			      <tr>
 			        <th>会社名&nbsp;<span class="required">※</span></th>
-			        <td><input size="20" type="text" name="会社名"></td>
+			      </tr>
+			      <tr>
+			        <td><input class="hoge" type="text" name="会社名"></td>
 			      </tr>
 			      <tr>
 			        <th>性別&nbsp;<span class="required">※</span></th>
-			        <td><input type="radio" name="性別" value="男"> 男　
+			      </tr>
+			      <tr>
+			        <td class="hoge2"><input type="radio" name="性別" value="男"> 男　
 			        <input type="radio" name="性別" value="女"> 女 </td>
 			      </tr>
 			      <tr>
 			        <th>住所（都道府県）&nbsp;<span class="required">※</span></th>
-			        <td><select name="住所（都道府県）">
+			      </tr>
+			      <tr>
+			        <td><select class="hoge" name="住所（都道府県）">
 			          <option value="">都道府県の選択</option>
 			          <option value="北海道">北海道</option>
 			          <option value="青森県">青森県</option>
@@ -197,23 +207,33 @@ $(function() {
 			      </tr>
 			      <tr>
 			        <th>住所（都道府県以下）&nbsp;<span class="required">※</span></th>
-			        <td><input size="30" type="text" name="住所（都道府県以下）"></td>
+			      </tr>
+			      <tr>
+			        <td><input class="hoge" type="text" name="住所（都道府県以下）"></td>
 			      </tr>
 			      <tr>
 			        <th>メールアドレス&nbsp;<span class="required">※</span></th>
-			        <td><input size="30" type="text" name="メールアドレス"></td>
+			      </tr>
+			      <tr>
+			        <td><input class="hoge" type="text" name="メールアドレス"></td>
 			      </tr>
 			      <tr>
 			        <th>電話番号&nbsp;<span class="required">※</span></th>
-			        <td><input size="30" type="text" name="電話番号"></td>
+			      </tr>
+			      <tr>
+			        <td><input class="hoge" type="text" name="電話番号"></td>
 			      </tr>
 			      <tr>
 			        <th>サイトURL</th>
-			        <td><input size="30" type="text" name="サイトURL"></td>
+			      </tr>
+			      <tr>
+			        <td><input class="hoge" type="text" name="サイトURL"></td>
 			      </tr>
 			      <tr>
 			        <th>お問い合わせサービス&nbsp;<span class="required">※</span></th>
-			        <td>
+			      </tr>
+			      <tr>
+			        <td class="hoge2">
 				        <input name="お問い合わせサービス[]" type="checkbox" value="ホームページ制作"> ホームページ制作<br>
 				        <input name="お問い合わせサービス[]" type="checkbox" value="ランディングページ制作"> ランディングページ制作<br>
 				        <input name="お問い合わせサービス[]" type="checkbox" value="パンフレット・フライヤー制作"> パンフレット・フライヤー制作<br>
@@ -232,15 +252,19 @@ $(function() {
 			      </tr>
 			      <tr>
 			        <th>ご予算</th>
-			        <td><input size="30" type="text" name="ご予算"></td>
+			      </tr>
+			      <tr>
+			        <td><input class="hoge" type="text" name="ご予算"></td>
 			      </tr>
 			      <tr>
 			        <th>お問い合わせ内容<br></th>
-			        <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+			      </tr>
+			      <tr>
+			        <td><textarea class="hoge" name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
 			      </tr>
 			    </table>
 			    <p align="center">
-			    <input type="submit" value="　 入力内容確認 　">　<input type="reset" value="リセット" />
+			    <input class="submit" type="submit" value="　 入力内容確認 　">　<input class="reset" type="reset" value="リセット" />
 			    </p>
 			  </form>
 			</div>

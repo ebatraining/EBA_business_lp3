@@ -294,27 +294,100 @@ small{
 	text-align: center;
 	clear: both;
 }
-
+.clear {
+  clear: both;
+}
 #formWrap {
-	width:100%;
+	width:700px;
 	margin:0 auto;
 	color:#555;
 	line-height:120%;
 	font-size:90%;
 }
 table.formTable{
-	width:100%;
+	width:75%;
 	margin:0 auto;
 	border-collapse:collapse;
 }
-table.formTable td,table.formTable th{
-	border:1px solid #ccc;
-	padding:10px;
-}
 table.formTable th{
-	width:30%;
-	font-weight:normal;
-	background:#efefef;
-	text-align:left;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align:left;
 }
+table.formTable td{
+	font-weight:normal;
+	
+}
+h2 {
+    background-color: rgba(0,20,120,1.0);
+    color: #ffffff;
+    padding: 3%;
+    margin-top: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+p.hissu {
+  text-align: right;
+  margin: 0;
+}
+.required {
+  color:red;
+}
+input.hoge,textarea.hoge {
+  border:0;
+  padding:10px;
+  font-size:1em;
+  border:solid 1px #ccc;
+  background-color: rgba(70,178,232,0.3);
+  margin:0 0 20px;
+  max-width:100%;
+  width: 500px;
+  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+
+}
+select.hoge {
+  border:0;
+  padding:10px;
+  font-size:1em;
+  border:solid 1px #ccc;
+  background-color: rgba(70,178,232,0.3);
+  margin:0 0 20px;
+  max-width:100%;
+  width: 521px;
+}
+input.submit {
+  border:solid 1px #000a78;
+  padding:15px 30px;
+  margin:0 0 20px;
+  font-family:Arial, sans-serif;
+  font-size:1.2em;
+  text-transform:uppercase;
+  font-weight:bold;
+  background-color:rgba(70,178,232,0.7);
+  color: #333333;
+  cursor:pointer;
+}
+input.reset {
+  border:solid 1px #808080;
+  padding:15px 30px;
+  margin:0 0 20px;
+  font-family:Arial, sans-serif;
+  font-size:1.2em;
+  text-transform:uppercase;
+  font-weight:bold;
+  background-color: rgba(192,192,192,0.7);
+  color: #808080;
+  cursor:pointer;
+}
+td.hoge2 {
+  border:0;
+  padding:10px;
+  font-size:1em;
+  max-width:100%;
+  width: 500px;
+}
+
 }
