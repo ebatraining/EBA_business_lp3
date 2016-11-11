@@ -395,6 +395,9 @@ input.submit {
   color: #ffffff;
   cursor:pointer;
 }
+input.submit:hover {
+  background-color: #3e4bda;
+}
 input.reset {
   border:solid 1px #808080;
   padding:10px 15px;
@@ -406,6 +409,9 @@ input.reset {
   background-color: rgba(192,192,192,0.7);
   color: #808080;
   cursor:pointer;
+}
+input.reset:hover {
+  background-color: rgba(220,220,220,0.7);
 }
 td.hoge2 {
   border:0;
